@@ -1,0 +1,6 @@
+cran_pcks <- c("yaml","shiny","shinythemes","shinyBS","ggplot2","mclust","dplyr","cowplot","Matrix","BiocManager","devtools","stringdist","data.table")
+install.packages(cran_pcks)
+bioc_pcks <- c("GenomicRanges","GenomicFeatures","GenomicAlignments","AnnotationDbi","Rsubread")
+BiocManager::install(bioc_pcks)
+devtools::install_github("hadley/multidplyr")
+quit()
