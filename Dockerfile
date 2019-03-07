@@ -6,8 +6,8 @@
 FROM quay.io/biocontainers/samtools:1.7--2
  
 ##Set up filesystem (auto-bindpoints in ocelote, depend)
-RUN mkdir /home /extra /rsgrps /cm /cm/shared /xdisk \
-&&  /depend mkdir /bin /zUMIs
+RUN mkdir /extra /rsgrps /cm /cm/shared /xdisk \
+&&  mkdir /depend /zUMIs
 
 WORKDIR /depend/
 ##Basic Ubuntu utilities for installation
